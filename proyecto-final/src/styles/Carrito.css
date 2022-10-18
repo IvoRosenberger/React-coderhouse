@@ -1,0 +1,15 @@
+.carrito{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carrito img{ 
+    height: 2rem;
+}
+
+.cantidadObjetos{
+    text-decoration: none;
+    color: #D84727;
+    font-size: 1rem;
+    font-weight: bold;
+}

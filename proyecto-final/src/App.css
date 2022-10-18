@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+.pantallaCarrito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.App{
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23e4e5e5' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23c6c7c7' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23a1a5a5' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23727878' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23042A2B' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment:scroll;
+  background-size: cover;
+  height: fit-content;
+}
+.error{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}

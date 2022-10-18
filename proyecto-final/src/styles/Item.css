@@ -1,0 +1,352 @@
+
+
+/* Catalogo de Itemlist */
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #5EB1BF;
+    margin: 1rem;
+    border-radius: 10px;
+    /* box-shadow: 4px 6px 4px 0px #5EB1BF; */
+    background-color: #FCF7FF;
+}
+.catalogo img{
+    margin: .4rem auto;
+    width: 16rem;
+    height: 19rem;
+}
+
+.catalogodetalles{
+    margin: .3rem 1rem;
+    /* height:100% */
+}
+
+.catalogodetalles h5{
+    margin: .1rem 0;
+    color: rgb(31, 30, 30);
+}
+
+.catalogodetalles .catalogoprincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalogoprecio{
+    font-size: 1.1rem;
+}
+
+.catalogodetalles .catalogoprincipal .catalogotitulo h4{
+    font-size: 1.3rem;
+    margin: 0;
+}
+.catalogodetalles .catalogoprincipal .catalogotitulo h5{
+    font-weight: normal;
+}
+.catalogoloInteresante{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.catalogolinkazo{
+    /* margin: .5rem; */
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 1rem 0;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.catalogobotonazo{
+    padding: .3rem;
+    background-color: #5EB1BF;
+    height: 100%;
+    width: 60%;
+    border: none;
+    border: 2px solid #284d53;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.catalogobotonazo:hover{
+    border: 2px solid #042A2B;
+    cursor: pointer;
+}
+
+.catalogoDetallesCarro,.catalogoAgregarQuitar, .catalogoPrecios{
+    display: none;
+}
+
+
+
+
+@media only screen and (min-width:630px){
+    .catalogo img{
+        width: 18rem;
+        height: 21rem;
+    }
+}
+
+
+/* Home, novedades */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin : 0 1rem
+}
+
+.home img{
+    width: 300px;
+    height: 340px;
+}
+.homeprincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.homeprincipal .hometitulo h4{
+    margin-bottom: 0;
+}
+.homeprincipal .hometitulo h5{
+    margin: .2rem 0;
+}
+
+.homeloInteresante{
+    display: none;
+}
+.homeDetallesCarro,.homeAgregarQuitar, .homePrecios{
+    display: none;
+}
+
+
+/* ELEMENTOS DE CARRiTO */
+.carroloInteresante{
+    display: none;
+}
+.carro{
+    border-bottom: 2px solid #5EB1BF;
+    display:grid;
+    gap: .7rem;
+    grid-template-columns: 25% 75%;
+    width: 95vw;
+    margin: 1rem 0;
+    position: relative;
+    background-color: white;
+}
+.carro:last-child{
+    border: none;
+}
+.carro img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem .5rem;
+}
+.carrodetalles{
+    display: flex;
+    flex-direction: column;
+}
+.carroprincipal{
+    display: flex;
+    flex-direction: column;
+}
+.carrotitulo{
+    margin-top: .5rem;
+}
+.carrotitulo h4, .carrotitulo h5{
+    font-size: 1.1rem;
+    margin:0;
+}
+.carroItem{
+    margin-top: .3rem;
+    font-size: 1rem;
+    font-weight:400;
+    text-transform: uppercase;
+}
+.carroDetallesCarro P{
+    color:black;
+    margin-top: .15rem;
+    font-size: .8rem;
+}
+.carroPrecios{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: fit-content;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.carroPrecios p{
+    font-size: .7rem;
+}
+.carroPrecios p span{
+    font-size: 1.5rem;
+}
+.carroAgregarQuitar{
+    right: 3rem;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.carroAgregarQuitar p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.carroAgregarQuitar .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.carroAgregarQuitar .botones button{
+    border: 1px solid #074749;
+    background-color: #042A2B;
+    color: white;
+    font-size: 1rem;
+    padding: .8rem;
+    border-radius: 10px;
+    margin:.2rem .2rem
+}
+
+.carroAgregarQuitar .botones button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width:1000px){
+.carro{
+    width: 45vw;
+    margin: 2rem .2rem 2rem 0;
+    gap: 1rem;
+    position: relative;
+    background-color: white;
+}
+.carrodetalles{
+    width: 90%;
+}
+
+.carroprincipal{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carrotitulo h4, .carrotitulo h5{
+    font-size: 1.7rem;
+    margin: .3rem 0
+}
+
+.carroItem{
+    margin-top: .3rem;
+    font-size: 1.1rem;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+.carroDetallesCarro P{
+    color:black;
+    margin-top: .3rem;
+    font-size: .8rem;
+}
+.carroPrecios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carroPrecios p{
+    font-size: 1.1rem;
+}
+.carroPrecios p span{
+    font-size: 1.5rem;
+}
+
+.carroAgregarQuitar{
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.carroAgregarQuitar .botones{
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.carroAgregarQuitar p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto .5rem auto;
+}
+}
+
+    /* TICKET */
+
+.ticketItem{
+    display: flex;
+    width: 70vw;
+    /* padding: 0 3rem; */
+    border-bottom: 2px solid #042A2B;
+    margin: 1rem auto;
+}
+
+.ticketItemprincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ticketItemdetalles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ticketItemprincipal{
+    width: 100%;
+    justify-content: space-between;
+}
+.ticketItemPrecios{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 90%;
+    margin-left: 5vw;
+    justify-content: space-between;
+}
+
+.ticketItemtitulo{
+    display: flex;
+    flex-direction: row;
+}
+.ticketItemtitulo h4, .ticketItemtitulo h5{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 .5rem 0 0;
+    font-weight: normal;
+} 
+.ticketItem img, .ticketItemAgregarQuitar, .ticketItemDetallesCarro, .ticketItemloInteresante{
+    display: none;
+}
+@media only screen and (min-width:750px){
+    .ticketItemdetalles{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+}
+@media only screen and (min-width:1150px){
+    .ticketItemPrecios{
+        flex-direction: row;
+    }
+
+}

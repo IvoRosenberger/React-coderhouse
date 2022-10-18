@@ -1,0 +1,44 @@
+.mainCatalogo{
+    margin-top: 99px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.mainCatalogo .bannerContenedor{
+    
+    /* background-color: #E7E7E7; */
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainCatalogo h2{
+    position: absolute;
+    z-index: 10;
+    /* top:50%; */
+    color: white;
+    text-shadow: 0px 0px 20px #000000;
+    font-size: 3rem;
+    /* transform: translateY(-50%); */
+}
+.mainCatalogo .banner{
+width: 100%;
+z-index: 0;
+width: 100vw;
+height: 30vh;
+object-fit: cover;
+/* border: 1px solid red; */
+/* width: 100vw; */
+    /* height: 35vh; */
+}
+
+.viewCatalogo{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 1rem;
+    }
